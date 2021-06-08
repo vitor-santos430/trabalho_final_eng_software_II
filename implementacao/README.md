@@ -19,6 +19,6 @@ Produto:
 
 Recondicionar:
 Ao criar um recondicionamento para uma peça específica, deve ter os seguintes argumentos(Produto,Cliente,código)
-nomeAtribuido.verificar() --> Esse terá um retorno informando se é possível recondicionar a peça novamente ou não. 
+nomeAtribuido.verificar() --> Esse terá um retorno informando se é possível recondicionar a peça novamente ou não.
 nomeAtribuido.aplicar() 
 nomeAtribuido.sucatear() --> Esse terá um retorno que a peça foi sucateada.
