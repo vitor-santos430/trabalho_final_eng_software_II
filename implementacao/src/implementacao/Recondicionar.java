@@ -23,6 +23,6 @@ public class Recondicionar {
 	public String sucatear() {
 		quantidade = 0;
 		codigoPeca = 0;	
-		return "Peça sucateada, pode utilizar para adicionar um novo produto";		
+		return "Peça sucateada, pode utilizar a classe para adicionar um novo produto";		
 	}
 }

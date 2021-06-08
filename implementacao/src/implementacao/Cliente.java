@@ -16,11 +16,11 @@ public class Cliente {
 	public void produto(Produto produto) {
 		this.produto = produto;
 	}	
-	public void pedido(Produto produto, Estoque e1) {
+	public void pedido(Produto produto, Estoque estoque) {
 		this.produto = produto;
 		//Continuar apos estoque ser criado
 	}
-	public void orcamento(Produto produto, Estoque e1) {
+	public void orcamento(Produto produto, Estoque estoque) {
 		//Continuar com estoque criado
 	}
 }
