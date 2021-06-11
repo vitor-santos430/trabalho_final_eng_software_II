@@ -1,5 +1,7 @@
 package implementacao;
 
+import java.util.Scanner;
+
 public class Principal {
 
 	public static void main(String[] args) {
@@ -24,6 +26,24 @@ public class Principal {
 		r.aplicar();
 		System.out.printf("O produto do cliente: %s foi verificado (%s)\n",c1.nome,r.verificar());
 		System.out.print(r.sucatear());
+		
+		Produto produto = new Produto();
+		
+		int codigo = 1;
+		String nome = "Pneu";
+		String categoria = "pneu";
+		
+		System.out.printf("\n%s foi adicionado aos produtos",nome);
+		produto.adicionar(codigo, nome, categoria);
+		produto.listar();
+		
+		System.out.print("\nO produto 1 foi editado");
+		produto.editar(1, "Pneu", "roda");
+		produto.listar();
+		
+		System.out.print("\nO produto 1 foi excluido");
+		produto.excluir(1);
+		produto.listar();
 	}
 
 }
