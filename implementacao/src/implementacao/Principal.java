@@ -52,14 +52,27 @@ public class Principal {
 		System.out.println("\nListando produtos no estoque...");
 		estoque.listar();
 		
-		for(int i = 0; i<65;i++)
-			System.out.print("*");
+		Principal.pulaLinha(65, '*');
 		
-		System.out.println("\nForam adicionadas 10 unidades de Velas");
+		System.out.println("Foram adicionadas 10 unidades de Velas");
 		estoque.movimentar(1, 10, "adicionar");
 		
 		System.out.println("Foram removidas 2 unidades de Bateria");
 		estoque.movimentar(3, 2, "abater");
+		
+		Principal.pulaLinha(65, '-');
+		
+		System.out.println("O preço de custo do produto: Cabeçote. Foi alterado para R$0,55.");
+		estoque.editar_preco_custo(0, 0.55);
+		
+		System.out.println("O preço de venda do produto: Pistão. Foi alterado para R$65,00.");
+		estoque.editar_preco_venda(2, 65.00);
+	}
+	
+	public static void pulaLinha(int qtd, char caractere) {
+		for(int i = 0; i<qtd;i++)
+			System.out.print(caractere);
+		System.out.println();
 	}
 
 }

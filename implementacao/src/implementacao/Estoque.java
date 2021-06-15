@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Estoque {
 	private int codigo;
 	private int quantidade;
-	private float preco_custo;
-	private float preco_venda;
+	private double preco_custo;
+	private double preco_venda;
 	private int quantidade_minima;
 	private ArrayList<String> falta = new ArrayList();
 	private ArrayList<String> lista = new ArrayList();
@@ -19,11 +19,11 @@ public class Estoque {
 		}
 	}
 	
-	public void editar_preco_custo(int codigo, float valor) {
+	public void editar_preco_custo(int codigo, double valor) {
 		this.preco_custo = valor;
 	}
 	
-	public void editar_preco_venda(int codigo, float valor) {
+	public void editar_preco_venda(int codigo, double valor) {
 		this.preco_venda = valor;
 	}
 	
