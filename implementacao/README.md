@@ -14,8 +14,14 @@ nomeAtribuido.pedido(Identificação do produto pela classe, identificação do 
 nomeAtribuido.orcamento(Identificação do produto pela classe, identificação do estoque daquele produto)
 
 Estoque:
+nomeAtribuido.movimentar() --> através desse metodo é possível remover ou adicionar um item ao estoque.
+nomeAtribuido.editar_preco_custo() --> Esse metodo é responsável por alterar o preço de custo.
+nomeAtribuido.editar_preco_venda() --> Esse metodo é responsável por alterar o preço de Venda.
+nomeAtribuido.falta() --> Metodo responsável por listar produtos em falta no estoque.
+nomeAtribuido.listar() --> Esse metodo lista todos os produtos do estoque.
 
 Produto:
+
 
 Recondicionar:
 Ao criar um recondicionamento para uma peça específica, deve ter os seguintes argumentos(Produto,Cliente,código)
