@@ -52,7 +52,14 @@ public class Principal {
 		System.out.println("\nListando produtos no estoque...");
 		estoque.listar();
 		
+		for(int i = 0; i<65;i++)
+			System.out.print("*");
 		
+		System.out.println("\nForam adicionadas 10 unidades de Velas");
+		estoque.movimentar(1, 10, "adicionar");
+		
+		System.out.println("Foram removidas 2 unidades de Bateria");
+		estoque.movimentar(3, 2, "abater");
 	}
 
 }
