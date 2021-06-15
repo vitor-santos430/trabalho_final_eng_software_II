@@ -21,7 +21,10 @@ nomeAtribuido.falta() --> Metodo responsável por listar produtos em falta no es
 nomeAtribuido.listar() --> Esse metodo lista todos os produtos do estoque.
 
 Produto:
-
+nomeAtribuido.adicionar() --> adiciona uma novo produto.
+nomeAtribuido.editar() --> edita um produto existente.
+nomeAtribuido.excluir() --> Exclui um produto.
+nomeAtribuido.listar() --> lista os produtos.
 
 Recondicionar:
 Ao criar um recondicionamento para uma peça específica, deve ter os seguintes argumentos(Produto,Cliente,código)
