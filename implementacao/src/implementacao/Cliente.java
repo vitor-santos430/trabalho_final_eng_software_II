@@ -18,9 +18,10 @@ public class Cliente {
 	}	
 	public void pedido(Produto produto, Estoque estoque) {
 		this.produto = produto;
-		//Continuar apos estoque ser criado
+		estoque.movimentar(this.codigo,1,"abater");
 	}
 	public void orcamento(Produto produto, Estoque estoque) {
-		//Continuar com estoque criado
+		this.produto = produto;
+		estoque.falta();
 	}
 }
