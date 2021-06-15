@@ -28,6 +28,7 @@ public class Principal {
 		System.out.print(r.sucatear());
 		
 		Produto produto = new Produto();
+		Estoque estoque = new Estoque();
 		
 		int codigo = 1;
 		String nome = "Pneu";
@@ -44,6 +45,14 @@ public class Principal {
 		System.out.print("\nO produto 1 foi excluido");
 		produto.excluir(1);
 		produto.listar();
+		
+		System.out.println("\nListando produtos em falta no estoque...");
+		estoque.falta();
+		
+		System.out.println("\nListando produtos no estoque...");
+		estoque.listar();
+		
+		
 	}
 
 }
